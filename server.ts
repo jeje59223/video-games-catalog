@@ -1,4 +1,4 @@
-import * as GamesServices from "./services/games/games.services"
+import * as GamesServices from "./src/services/games/games.services"
 import { Request, Response } from "express";
 import axios from "axios";
 import express = require("express");
