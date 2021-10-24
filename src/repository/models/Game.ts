@@ -1,6 +1,7 @@
 import { Platform } from './Platform'
 
 export interface Game {
+    id: string;
     name: string;
     slug: string;
     released: string;

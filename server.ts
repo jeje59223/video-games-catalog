@@ -1,14 +1,14 @@
 import * as GamesServices from "./src/services/games/games.services"
 import { Request, Response } from "express";
-import axios from "axios";
 import express = require("express");
 
 const morgan = require('morgan');
 
 const server = express();
+const port = process.env.PORT;
 
 server.use(morgan("dev"));
-server.listen(3000);
+server.listen(port);
 
 server.get('/', (req: Request, res: Response) => {
     console.log('coucou 22');
@@ -21,12 +21,8 @@ server.get('/games', async (req: Request, res: Response) => {
 })
 
 // permet d'afficher un jeu
-server.get('/games/:id', async(req: Request, res: Response) => {
-    const id = 43242;
-    const response = await axios.get(
-        `https://api.rawg.io/api/games/${id}?key=6fb12de45eaa45b2b0e1546d2e762d0e`
-    );
-    res.send(response.data);
+server.get('/games/:gameId', async (req: Request, res: Response) => {
+    res.send(await GamesServices.getGameById(req.params.gameId))
 })
 
 // page d'erreur

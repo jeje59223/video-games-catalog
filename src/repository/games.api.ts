@@ -11,3 +11,10 @@ export async function getGames(): Promise<Game[]> {
     );
     return response.data;
 }
+
+export async function getGameById(gameId: string): Promise<Game> {
+    const response = await axios.get<Game>(
+        `${ENDPOINT}/games/${gameId}?key=${RAWG_API_KEY}`
+    );
+    return response.data
+}
