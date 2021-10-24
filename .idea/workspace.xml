@@ -2,12 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0ddb5102-8871-4672-8f1c-3be203728108" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/repository/games.api.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/repository/games.api.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/repository/models/Game.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/repository/models/Game.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/games/games.services.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/games/games.services.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/games/games.services.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/games/games.route.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,7 +82,7 @@
       <workItem from="1634926263871" duration="18892000" />
       <workItem from="1634999203343" duration="145000" />
       <workItem from="1634999379610" duration="496000" />
-      <workItem from="1635000079407" duration="9913000" />
+      <workItem from="1635000079407" duration="15004000" />
     </task>
     <servers />
   </component>
