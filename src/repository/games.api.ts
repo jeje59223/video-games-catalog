@@ -1,5 +1,6 @@
 import axios from 'axios';
 import { Game } from "./models/Game";
+import { Screenshot } from "./models/Screenshot";
 require('dotenv').config();
 const RAWG_API_KEY = process.env.RAWG_API_KEY;
 
@@ -12,9 +13,16 @@ export async function getGames(): Promise<Game[]> {
     return response.data;
 }
 
+export async function getScreenshotsByGameId(gameId: string): Promise<Screenshot[]> {
+    const response = await axios.get<Screenshot[]>(
+        `${ENDPOINT}/games/${gameId}/screenshots?key=${RAWG_API_KEY}`
+    );
+    return response.data;
+}
+
 export async function getGameById(gameId: string): Promise<Game> {
     const response = await axios.get<Game>(
         `${ENDPOINT}/games/${gameId}?key=${RAWG_API_KEY}`
     );
-    return response.data
+    return response.data;
 }
