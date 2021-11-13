@@ -19,6 +19,4 @@ router.get('/:gameId', async (req: Request, res: Response) => {
   res.send(await GamesServices.getGameById(req.params.gameId));
 });
 
-
-
 module.exports = router;

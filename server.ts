@@ -1,17 +1,17 @@
 import { Request, Response } from "express";
 import express = require("express");
 const gamesRouter = require("./src/routes/games/games.route");
+const genresRouter = require("./src/routes/genres/genres.route");
 
 const morgan = require('morgan');
 
 export const server = express();
-const port = process.env.PORT;
+const BFF_PORT = process.env.BFF_PORT;
 
 server.use(morgan("dev"));
-server.listen(port);
+server.listen(BFF_PORT);
 
 server.get('/', (req: Request, res: Response) => {
-    console.log('coucou 22');
     res.send('HELLO WORLD !');
 })
 
@@ -23,3 +23,4 @@ server.use((error: any, req:any, res: any, suite: any) => {
 })
 
 server.use("/games", gamesRouter);
+server.use("", genresRouter);

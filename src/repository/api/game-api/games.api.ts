@@ -1,6 +1,6 @@
 import axios from 'axios';
-import { Game } from "./models/Game";
-import { Screenshot } from "./models/Screenshot";
+import { Game } from "../../models/Game";
+import { Screenshot } from "../../models/Screenshot";
 require('dotenv').config();
 const RAWG_API_KEY = process.env.RAWG_API_KEY;
 
