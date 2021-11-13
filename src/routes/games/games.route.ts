@@ -10,7 +10,7 @@ router.get('', async (req: Request, res: Response) => {
 });
 
 // permet d'afficher les screenshots
-router.get('/:gamesId/screenshots', async (req: Request, res: Response) => {
+router.get('/:gameId/screenshots', async (req: Request, res: Response) => {
     res.send(await GamesServices.getScreenshotsByGameId(req.params.gameId));
 });
 

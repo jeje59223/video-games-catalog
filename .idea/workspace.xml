@@ -2,11 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0ddb5102-8871-4672-8f1c-3be203728108" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/repository/games.api.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/repository/api/game-api/games.api.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/repository/api/game-api/games.api.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/repository/api/game-api/games.api.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/repository/models/Platform.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/repository/models/Platform.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/routes/games/games.route.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/games/games.route.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/genres/genres.route.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/genres/genres.route.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/services/games/games.services.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/games/games.services.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/genres/genres.services.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/genres/genres.services.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,7 +99,7 @@
       <workItem from="1636570611699" duration="595000" />
       <workItem from="1636624210409" duration="252000" />
       <workItem from="1636703394963" duration="417000" />
-      <workItem from="1636795946563" duration="4231000" />
+      <workItem from="1636795946563" duration="8179000" />
     </task>
     <servers />
   </component>
