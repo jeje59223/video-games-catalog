@@ -23,4 +23,4 @@ server.use((error: any, req:any, res: any, suite: any) => {
 })
 
 server.use("/games", gamesRouter);
-server.use("", genresRouter);
+server.use("/genres", genresRouter);

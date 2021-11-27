@@ -13,14 +13,14 @@ export async function getGames(): Promise<Game[]> {
     return response.data;
 }
 
-export async function getScreenshotsByGameId(gameId: string): Promise<Screenshot[]> {
+export async function getScreenshotsByGameId(gameId: Game['id']): Promise<Screenshot[]> {
     const response = await axios.get<Screenshot[]>(
         `${ENDPOINT}/games/${gameId}/screenshots?key=${RAWG_API_KEY}`
     );
     return response.data;
 }
 
-export async function getGameById(gameId: string): Promise<Game> {
+export async function getGameById(gameId: Game['id']): Promise<Game> {
     const response = await axios.get<Game>(
         `${ENDPOINT}/games/${gameId}?key=${RAWG_API_KEY}`
     );
