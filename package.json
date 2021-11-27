@@ -35,5 +35,18 @@
   "exclude": [
     "../../node_modules",
     "../../typings"
-  ]
+  ],
+  "jest": {
+    "testEnvironment": "node",
+    "collectCoverage": true,
+    "coverageReporters": [
+      "lcov"
+    ],
+    "setupFiles": [
+      "dotenv/config"
+    ],
+    "transform": {
+      "\\.(ts)$": "ts-jest"
+    }
+  }
 }
