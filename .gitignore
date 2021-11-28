@@ -4,4 +4,3 @@
 .env*.local
 node_modules
 .idea
-coverage
