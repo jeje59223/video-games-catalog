@@ -1,9 +1,16 @@
 import * as GameApi from '../game-api/games.api';
+import game from './test-data/game';
+import axios from 'axios';
 
-describe('/games', () => {
+jest.mock('axios');
+
+const mockedAxios = axios as jest.Mocked<typeof axios>;
+
+describe('Games', () => {
     it('should be return a games list', async () => {
-        const gamesReturned = await GameApi.getGames();
+        mockedAxios.get.mockResolvedValue({ data: [game] });
+        const games = await GameApi.getGames();
 
-        expect(gamesReturned).not.toBeNull();
+        expect(games).toEqual([game]);
     });
 })
