@@ -9,7 +9,7 @@ export interface Game {
     background_image: string,
     rating: number,
     rating_top: number,
-    "ratings": Rating[],
+    ratings: Rating[],
     ratings_count: number,
     reviews_text_count: number,
     added: number,
@@ -33,9 +33,9 @@ export interface Game {
     community_rating: number,
     saturated_color: string,
     dominant_color: string,
-    "short_screenshots": Short_screenshots[],
-    "parent_platforms": Platform[],
-    "genres": Genre[]
+    short_screenshots: Short_screenshots[],
+    parent_platforms: Platform[],
+    genres: Genre[]
 }
 
 export interface Platform {
@@ -71,8 +71,8 @@ export interface Tag {
     name: string,
     slug: string,
     language: "eng" | "rus",
-    "games_count": number,
-    "image_background": string,
+    games_count: number,
+    image_background: string,
 }
 
 export interface Short_screenshots {
