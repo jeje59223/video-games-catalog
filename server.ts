@@ -2,6 +2,7 @@ import { Request, Response } from "express";
 import express = require("express");
 const gamesRouter = require("./src/routes/games/games.route");
 const genresRouter = require("./src/routes/genres/genres.route");
+const platformsRouter = require("./src/routes/platforms/platforms.route");
 
 const morgan = require('morgan');
 
@@ -24,3 +25,4 @@ server.use((error: any, req:any, res: any, suite: any) => {
 
 server.use("/games", gamesRouter);
 server.use("/genres", genresRouter);
+server.use("/platforms", platformsRouter);
