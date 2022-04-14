@@ -21,13 +21,7 @@ export interface Game {
     score: string,
     clip: string | null,
     tags: Tag[],
-    esrb_rating: {
-        id: number,
-        name: string,
-        slug: string,
-        name_en: string,
-        name_ru: string,
-    },
+    esrb_rating: Esrb_rating,
     user_game: string | null,
     reviews_count: number,
     community_rating: number,
@@ -36,6 +30,14 @@ export interface Game {
     short_screenshots: Short_screenshots[],
     parent_platforms: Platform[],
     genres: Genre[]
+}
+
+export interface Esrb_rating {
+    id: number,
+    name: string,
+    slug: string,
+    name_en: string,
+    name_ru: string,
 }
 
 export interface Platform {
@@ -70,9 +72,14 @@ export interface Tag {
     id: number,
     name: string,
     slug: string,
-    language: "eng" | "rus",
+    language: Language,
     games_count: number,
     image_background: string,
+}
+
+export interface Language {
+    eng: "eng",
+    rus: "rus",
 }
 
 export interface Short_screenshots {
