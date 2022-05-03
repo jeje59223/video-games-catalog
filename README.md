@@ -7,6 +7,5 @@ You can test path with URL :
 
 Exemple : see the list of games : [http://localhost:8080/games](http://localhost:8080/games) to view it in the browser
 
-
 ### `npm test`
 Allows you to run unit tests
