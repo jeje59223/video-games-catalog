@@ -1,5 +1,6 @@
 import { Request, Response } from "express";
 import express = require("express");
+const cors = require("cors");
 const gamesRouter = require("./src/routes/games/games.route");
 const genresRouter = require("./src/routes/genres/genres.route");
 const platformsRouter = require("./src/routes/platforms/platforms.route");
@@ -11,6 +12,7 @@ const BFF_PORT = process.env.BFF_PORT;
 
 server.use(morgan("dev"));
 server.listen(BFF_PORT);
+server.use(cors({ origin: true }));
 
 server.get('/', (req: Request, res: Response) => {
     res.send('HELLO WORLD !');

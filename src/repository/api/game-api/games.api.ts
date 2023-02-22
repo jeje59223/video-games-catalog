@@ -13,6 +13,15 @@ export async function getGames(): Promise<Game[]> {
     return response.data;
 }
 
+export async function getBestGamesOfTheMonth(startMonth, endMonth): Promise<Game[]> {
+    const size :number = 36;
+    const page: number = 1;
+    const response = await axios.get<Game[]>(
+        `${ENDPOINT}/games?key=${RAWG_API_KEY}&dates=${startMonth},${endMonth}&ordering=-added&page_size=${size}&page=${page}`
+    );
+    return response.data;
+}
+
 export async function getScreenshotsByGameId(gameId: Game['id']): Promise<Screenshot[]> {
     const response = await axios.get<Screenshot[]>(
         `${ENDPOINT}/games/${gameId}/screenshots?key=${RAWG_API_KEY}`
