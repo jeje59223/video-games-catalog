@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "jest",
-    "start": "nodemon server.ts"
+    "start": "nodemon server.ts",
+    "build": "tsc"
   },
   "keywords": [],
   "author": "",
@@ -29,6 +30,7 @@
     "nodemon": "^2.0.13",
     "ts-jest": "^27.0.7",
     "ts-node": "^10.4.0",
+    "tsc": "^2.0.4",
     "typescript": "^4.5.2"
   },
   "lib": [
@@ -49,6 +51,9 @@
     ],
     "transform": {
       "\\.(ts)$": "ts-jest"
-    }
+    },
+    "testMatch": [
+      "**/*.test.ts"
+    ]
   }
 }

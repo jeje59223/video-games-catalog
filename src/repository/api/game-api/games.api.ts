@@ -13,7 +13,7 @@ export async function getGames(): Promise<Game[]> {
     return response.data;
 }
 
-export async function getBestGamesOfTheMonth(startMonth, endMonth): Promise<Game[]> {
+export async function getBestGamesOfTheMonth(startMonth: string, endMonth: string): Promise<Game[]> {
     const size :number = 36;
     const page: number = 1;
     const response = await axios.get<Game[]>(

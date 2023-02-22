@@ -1,7 +1,7 @@
 import { Game } from "../../repository/models/Game";
 import * as GamesApi from "../../repository/api/game-api/games.api";
 import { Screenshot } from "../../repository/models/Screenshot";
-import * as dayjs from "dayjs";
+import dayjs from "dayjs";
 
 export async function getGames(): Promise<Game[]> {
     return GamesApi.getGames()
